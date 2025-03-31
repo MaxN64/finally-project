@@ -1,0 +1,880 @@
+/* =========================================
+   1. Сброс некоторых стандартных стилей браузера
+   ========================================= */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* =========================================
+     2. Общие стили для страницы
+     ========================================= */
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: #f9f9f9;
+    line-height: 1.6;
+    width: 1512px;
+    height: 4500px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+
+    
+  }
+  
+  /* =========================================
+     3. Шапка сайта (site-header)
+     ========================================= */
+  .site-header {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 1rem 0;
+    max-width: 1512px;
+    margin: 0 auto;
+    border: 2px red solid; 
+    
+  }
+
+  .header-inner {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* border: 2px red solid; */
+  }
+ .logo{
+  margin-right: 40px;
+ }
+  .logo a {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+    
+    color: #ff473e; /* Выберите любой цвет */
+  }
+  
+  /* Поисковая строка */
+  .search-bar {
+    display: flex;
+    align-items: center;
+    
+    /* gap: 0.5rem; */
+  }
+  
+  .search-bar input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    width: 296px;
+    height: 40px;
+    background: url('/foto/VectorS.svg') no-repeat 8px center;
+  background-size: 16px 16px; /* подберите нужный размер иконки */
+  padding-left: 32px; 
+  }
+  
+  .search-bar select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 40px;
+    width: 296px;
+  }
+  .search-button {
+    background-color: #ff4a4a;
+    border: none;
+    /* padding: 0.5rem 1rem; */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 5px 5px 0 ;
+    margin-right: 500px;
+   
+    
+  }
+  .search-button img {
+    width: 35px;
+    height: 35px;
+  }
+  
+  /* Блоки справа: язык, логин, регистрация */
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .header-actions a {
+    text-decoration: none;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  /* Кнопки */
+  .btn {
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .signup-btn {
+    background-color: rgba(0, 121, 138, 1);
+    color: #fff;
+    width: 83px;
+    height: 36px;
+    font-size: 14px;
+    font-weight: 500;
+    
+
+  }
+  
+  /* =========================================
+     4. Главная секция (hero-section)
+     ========================================= */
+  .hero-section {
+    width: 100%;
+    max-width: 1196px;
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap; /* Адаптация под мобильные */
+    gap: 2rem;
+    align-items: center;
+    padding: 0;
+    /* border: 2px red solid; */
+    margin-top: 40px;
+    margin-bottom: 100px;
+  }
+  
+  .hero-content {
+    flex: 1 1 400px; 
+    /* border: 2px red solid;  */
+  }
+  
+  .hero-content h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    margin-bottom: 1.5rem;
+    max-width: 600px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  
+  .join-btn {
+    background-color: rgba(0, 121, 138, 1);
+    color: #fff;
+    width: 128px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .hero-illustration {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px red solid;  */
+  }
+  
+  .hero-illustration img {
+    width: 379px;
+    height: 269px;
+  }
+  
+  /* =========================================
+     5. Заголовок списка событий (page-header)
+     ========================================= */
+  .page-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #ffffff;
+    padding: 10px 0 10px 0 ;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1rem; /* Чтобы не сливался с сеткой */
+    max-width: 1196px;
+    /* border: 2px red solid; */
+    margin: 0 auto;
+  }
+  
+  .page-header h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-right: 40px;
+    
+   
+
+  }
+  .page-header h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 15px;
+    color: rgba(0, 121, 138, 1);
+  }
+  .page-header img{ 
+    margin-right: 670px;
+    width: 25px;
+    height: 25px;
+  }
+  
+  .view-all-link {
+    text-decoration: none;
+    color: rgba(0, 121, 138, 1);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0.5rem 0.8rem;
+   
+  }
+  
+ 
+  
+  /* =========================================
+     6. Основные блоки с событиями
+     ========================================= */
+  
+ 
+  .section-title {
+    margin: 1rem 0; 
+    max-width: 1196px;
+    /* border: 2px red solid; */
+    margin: 0 auto;
+  }
+  
+  .section-title h2 {
+    font-size: 1.3rem;
+    color: #444;
+    margin-top: 80px;
+    margin-bottom: 20px;
+  }
+  .hero11{
+    max-width: 1196px;
+    /* border: 2px red solid; */
+    margin: 0 auto;
+
+  }
+  
+  /* Сетка событий */
+  .events-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    max-width: 1196px;
+    /* border: 2px red solid; */
+    margin: 0 auto;
+  }
+  
+  /* Карточка события */
+  .event-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+   
+
+  }
+  
+  .event-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  }
+  
+  .event-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .event-info {
+    padding: 0;
+  }
+  
+  .event-title {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #222;
+  }
+  
+  .event-category {
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 0.3rem;
+  }
+  
+  .event-date {
+    font-size: 16px;
+    font-weight: 400;
+    color: #444;
+    margin-bottom: 0.3rem;
+  }
+  
+  .event-going {
+    font-size: 16px;
+    font-weight: 400;
+    color: #999;
+    
+  }
+  .event-free{
+    margin-left: 23px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .icon {
+    width: 20px; 
+  height: 20px;
+  vertical-align: middle; 
+  margin-right: 8px;
+  }
+  
+ /* Hero Section */
+ .hero {
+    display: flex;
+    flex-wrap: wrap; /* чтобы на узких экранах блоки переносились */
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(151, 202, 209, 0.08);;
+    padding: 2rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .hero-content {
+    flex: 1 1 400px; /* чтобы текстовый блок занимал минимум 400px */
+    margin-right: 2rem;
+    width: 1192px;
+    height: 136px;
+  }
+  
+  .hero-content h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    margin-bottom: 1.5rem;
+    max-width: 500px;
+  }
+  
+  .btn-signup {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #e51670;
+    color: #fff;
+    width: 192px;
+    height: 40px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+    text-align: center;
+    padding: 7px;
+    font-family: 16px;
+  }
+  
+  .btn-signup:hover {
+    background-color: #c4125c;
+  }
+  
+  .hero-image {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Main sections */
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  /* Categories */
+  .categories {
+    margin-bottom: 2rem;
+  }
+  
+  .categories h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .categories-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 130px; /* фиксированная ширина для иконки и текста */
+    padding: 1rem;
+    background-color: rgba(151, 202, 209, 0.08);
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    text-align: center;
+    transition: box-shadow 0.2s ease;
+  }
+  
+  .category-item:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .category-item img {
+    margin-bottom: 0.5rem;
+    
+  }
+  
+  /* Popular cities */
+  .popular-cities {
+    margin-bottom: 2rem;
+  }
+  
+  .popular-cities h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subtitle {
+    color: rgba(112, 112, 112, 1);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+  }
+  
+  .cities-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    gap: 1rem; 
+    margin-left: 5 0px;
+  }
+
+  .city-item span {
+    margin-left: 9px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  
+  .city-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 205px;
+    /* border: 2px red solid; */
+  }
+  
+  .city-image {
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+    margin-left: 14px;
+    width: 205px;
+    height: 205px;
+    object-fit: cover;
+  }
+  
+  /* How Meetup works */
+  .how-it-works {
+    margin-bottom: 2rem;
+  }
+  
+  .how-it-works h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .hiw-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .hiw-card {
+    flex: 1 1 280px;
+    background-color: rgba(151, 202, 209, 0.08);
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 1.5rem;
+    transition: box-shadow 0.2s ease;
+  }
+.hiw-card p{
+  font-size: 16px;
+  font-weight: 400;
+}
+  .hiw-card img{
+    height: 41px;
+    width: 41px;
+  }
+  .span1{
+    margin-left: 72px;
+    /* border: 2px red solid; */
+  }
+  .span2 {
+    margin-left: 72px;
+    /* border: 2px red solid; */
+  }
+  .hiw-card:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .hiw-card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+
+  /* =========================================
+     7. Футер
+     ========================================= */
+  .page-footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #f2f2f2;
+    margin-top: 2rem;
+  }
+  
+  .page-footer p {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  .friendships-section {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .friendships-content h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .intro-text {
+    margin-bottom: 2rem;
+    max-width: 700px;
+    color: #555;
+  }
+  
+  .intro-text a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .intro-text a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Сетка с карточками */
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .card h3 {
+    font-size: 1.1rem;
+    margin: 1rem;
+  }
+  
+  .card p {
+    font-size: 0.95rem;
+    margin: 0 1rem 1rem 1rem;
+    color: #555;
+  }
+  
+  .read-more {
+    font-size: 0.9rem;
+    margin: 0 1rem 1rem 1rem;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .read-more:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  .site-footer {
+    background-color: #1a1a1a;
+    color: #ccc;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+  }
+  
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  
+  .footer-top p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+  
+  .btn-get-started {
+    text-decoration: none;
+    background-color: #e51670;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+  }
+  
+  .btn-get-started:hover {
+    background-color: #c4125c;
+  }
+  
+  
+
+  .site-footer {
+    background-color: #1a1a1a; /* тёмный фон */
+    color: #ccc;
+    /* padding: 2rem 1rem; */
+    margin-top: 2rem;
+    height: 559px;
+    width: 1512px;
+    /* border: 2px rgb(28, 243, 17) solid; */
+  }
+  
+  /* CTA-блок сверху (Create your own Meetup group...) */
+  .footer-cta {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 83px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+    padding-top: 0 ;
+    margin-left: 200px;
+    border-bottom: 2px solid #667;
+  }
+  .footer-top {
+    /* border: 2px rgb(246, 191, 102) solid; */
+  }
+  .footer-cta p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    /* border: 2px red solid; */
+  }
+  
+  .btn-get-started {
+    text-decoration: none;
+    background-color: #050505;
+    color: #fff;
+    width: 119px;
+    height: 44px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+    border: 2px rgba(255, 255, 255, 1) solid;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 7px 0 0 13px ;
+    margin-right: 850px;
+   
+  }
+  
+  .btn-get-started:hover {
+    background-color: #5d5b5c;
+  }
+  
+  /* Основные ссылки футера (колонки) */
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-left: 200px;
+    /* border: 2px red solid; */
+  }
+  
+  .footer-column {
+    min-width: 140px;
+    width: 373px;
+    /* margin-right: 300px; */
+    /* border: 6px rgb(148, 209, 247) solid; */
+  }
+  
+  .footer-column h4 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 4px;
+    color: #fff;
+    /* border: 2px red solid; */
+  }
+  
+  .footer-column ul {
+    list-style: none;
+  }
+ 
+  .footer-column li {
+    margin-bottom: 4px;
+    /* border: 2px red solid; */
+  }
+  
+  .footer-column a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .footer-column a:hover {
+    text-decoration: underline;
+  }
+  .footer-column-main{
+    margin-top: 0;
+    display: flex;
+    margin-left: 200px;
+    /* border: 3px rgb(31, 196, 50) solid; */
+  }
+  /* Соцсети */
+  .social-column .social-icons a {
+    display: inline-block;
+    margin-right: 0.5rem;
+    /* border: 2px rgb(55, 91, 79) solid; */
+    padding-top: 15px;
+  }
+  .social-column h4{
+    font-family: 16px;
+    font-weight: 400;
+  }
+
+  .social-column img {
+    margin-right: 40px;
+    width: 25px;
+    height: 25px;
+  }
+  
+  /* Магазины (App Store / Google Play) */
+  .store-badges {
+    display: flex;
+    margin-bottom: 0.5rem;
+    
+    margin-top: 40px;
+    margin-left: 490px;
+    padding-bottom: 0;
+  }
+  
+  /* Нижняя строка футера */
+  .footer-bottom {
+    border-top: 1px solid #333;
+    padding-top: 1rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
+    align-items: center;
+    margin-top: 0px;
+    margin-left: 200px;
+    /* border: 2px rgb(91, 227, 204) solid; */
+  }
+  .footer-bottom1{
+    /* border: 2px rgb(213, 139, 28) solid; */
+  }
+  .footer-bottom p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    margin-right: 40px;
+    
+  }
+  
+  .footer-policies {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 10px;
+    /* list-style: none; */
+    margin: 0px;
+    padding: 0;
+    /* border: 2px rgb(213, 139, 28) solid; */
+  }
+  
+  /* .footer-policies li {
+    margin-bottom: 0.5rem;
+  } */
+  
+  .footer-policies a {
+    color: #ccc;
+    font-size: 0.8rem;
+    text-decoration: none;
+  }
+  
+  .footer-policies a:hover {
+    text-decoration: underline;
+  }
+  
+
+   @media only screen and (max-width: 393px) {
+   
+    .site-header{
+       max-width: 393px; 
+       margin: 0;
+        background-color: #fff;
+        border-bottom: 1px solid #eee;
+        padding: 1rem 0;
+        /* margin: 0 auto; */
+        border: 2px red solid; 
+        
+      }
+    
+
+      body {
+        max-width: 393px;
+        font-size: 19px;
+        font-weight: 500; 
+        margin: 0;
+        /* padding: 0 5px; */
+      }
+      .footer-bottom {
+         max-width: 393px; 
+       margin: 0;
+      }
