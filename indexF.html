@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale =1.0"/>
+  <title>MyMeet — Events near Mountain View, CA</title>
+  
+  <link rel="stylesheet" href="styleF.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+ 
+  <header class="site-header">
+    <div class="header-inner">
+      
+      <div class="logo">
+        <img src="/foto/Link - Meetup logo.svg" alt="MyMeet" />
+      </div>
+      
+      <!-- Поисковая строка с выбором города -->
+      <div class="search-bar">
+        <input type="text" placeholder="Search events" />
+        <select>
+          <option>Mountain View, CA</option>
+         
+        </select>
+        <button type="submit" class="search-button" aria-label="Найти события">
+          <!-- Заменяем <svg> на <img> с путём к вашей иконке -->
+          <img 
+            src="/foto/Button - Search events.svg" 
+            alt="Иконка поиска" 
+           
+          />
+        </button>
+
+      </div>
+      
+      <!-- Языковая панель/кнопки входа и регистрации -->
+      <div class="header-actions">
+        <a href="#">English</a>
+        <a href="#">Login</a>
+        <button class="btn signup-btn">Sign up</button>
+      </div>
+    </div>
+  </header>
+  
+  
+  <!-- Крупный блок (Hero Section) с описанием и иллюстрацией -->
+  <main class="hero-section">
+    <div class="hero-content">
+      <h1>The people platform—Where interests become friendships</h1>
+      <p>
+        Whatever your interest, from hiking and reading to networking and skill sharing, 
+        there are thousands of people who share it on MyMeet. Events are happening every day—
+        sign up to join the fun.
+      </p>
+      <button class="btn-join-btn">Join MyMeet</button>
+    </div>
+    
+    <div class="hero-illustration">
+      <!-- Заглушка иллюстрации; подставьте свою картинку -->
+      <img src="/foto/irl_event.svg.svg" alt="Иллюстрация" />
+    </div>
+  </main>
+  
+  <!-- Блок с офлайн событиями -->
+  <section class="events-section">
+    <!-- Небольшая «шапка» для списка событий -->
+    <header class="page-header">
+      <h1>Events near </h1>
+      <h2>Mountain View, CA</h2>
+      <img 
+      src="/foto/Link → SVG.svg" 
+      alt="Иконка поиска" 
+     
+    />
+      <a href="#" class="view-all-link">See all events</a>
+    </header>
+
+    <!-- <div class="section-title">
+      <h2>Events near Mountain View, CA</h2>
+    </div> -->
+    <div class="events-grid">
+      <!-- Карточка события 1 -->
+      <article class="event-card">
+        <img 
+          src="/foto/group-cover-10-wide.webp.svg" 
+          alt="Event 1" 
+          class="event-image"
+        />
+        <div class="event-info">
+          
+          <h3 class="event-title">Day Trading Idea and Strategy</h3>
+          <p class="event-category">Business (5 km)</p>
+          <p class="event-date"> <img src="/foto/SVG3.svg" alt="" class="icon" />MON, MAR 18 · 7:00 PM PDT</p>
+          <p class="event-going"><img src="/foto/SVG2.svg" alt="" class="icon" />3 going 
+           <span class="event-free"><img src="/foto/Vector1.svg" alt="" class="icon" /> Free</span> 
+        </div>
+      </article>
+      <!-- Карточка события 2 -->
+      <article class="event-card">
+        <img 
+          src="/foto/event_519345287.webp.svg" 
+          alt="Event 2" 
+          class="event-image"
+        />
+        <div class="event-info">
+          <h3 class="event-title">Let's Talk Networking: JPMorgan Chase in 
+            Palo Alto</h3>
+          <p class="event-category">Business (5 km)</p>
+          <p class="event-date"> <img src="/foto/SVG3.svg" alt="" class="icon" />TUE, MAR 19 · 5:00 PM PDT</p>
+          <p class="event-going"><img src="/foto/SVG2.svg" alt="" class="icon" />3 going 
+           <span class="event-free"><img src="/foto/Vector1.svg" alt="" class="icon" /> Free</span> 
+      
+        </div>
+      </article>
+      <!-- Карточка события 3 -->
+      <article class="event-card">
+        <img 
+          src="/foto/event_519446442.webp.svg" 
+          alt="Event 3" 
+          class="event-image"
+        />
+        <div class="event-info">
+          <h3 class="event-title">Tech Talks & Quiz: Next-
+            Gen Database Solutions
+            for Emerging Use Cases</h3>
+          <p class="event-category">Technology</p>
+          <p class="event-date"> <img src="/foto/SVG3.svg" alt="" class="icon" />WEN, MAR 18 · 7:00 PM PDT</p>
+          <p class="event-going"><img src="/foto/SVG2.svg" alt="" class="icon" />3 going 
+           <span class="event-free"><img src="/foto/Vector1.svg" alt="" class="icon" /> Free</span> 
+      
+        </div>
+      </article>
+      <!-- Карточка события 4 -->
+      <article class="event-card">
+        <img 
+          src="/foto/event_519345287.webp.svg" 
+          alt="Event 4" 
+          class="event-image"
+        />
+        <div class="event-info">
+          <h3 class="event-title">INFORMS San Francisco
+            Chapter In-Person Event</h3>
+          <p class="event-category">Health and Wellbeing (50 km)</p>
+          <p class="event-date"> <img src="/foto/SVG3.svg" alt="" class="icon" />MON, MAR 28 · 7:00 PM PDT</p>
+          <p class="event-going"><img src="/foto/SVG2.svg" alt="" class="icon" />3 going 
+           <span class="event-free"><img src="/foto/Vector1.svg" alt="" class="icon" /> Free</span> 
+      
+        </div>
+      </article>
+      <!-- Карточка события 5 -->
+      <article class="event-card">
+        <img 
+          src="/foto/event_518548420.webp.svg" 
+          alt="Event 5" 
+          class="event-image"
+        />
+        <div class="event-info">
+          <h3 class="event-title">AI Wednesdays - Meet
+            and Greet!</h3>
+          <p class="event-category">Technology (5 km)</p>
+          <p class="event-date"> <img src="/foto/SVG3.svg" alt="" class="icon" />Wed, Mar 13 · 6:30 PM PDT</p>
+          <p class="event-going"><img src="/foto/SVG2.svg" alt="" class="icon" />23 going 
+           <span class="event-free"><img src="/foto/Vector1.svg" alt="" class="icon" /> Free</span> 
+      
+        </div>
+      </article>
+      <!-- Карточка события 6 -->
+      <article class="event-card">
+        <img 
+          src="/foto/event_519616239.webp.svg" 
+          alt="Event 6" 
+          class="event-image"
+        />
+        <div class="event-info">
+          <h3 class="event-title">ROS By-The-Bay March
+            2024</h3>
+          <p class="event-category">Social Activities</p>
+          <p class="event-date"> <img src="/foto/SVG3.svg" alt="" class="icon" />THU, MAR 21 · 6:00 PM PDT</p>
+          <p class="event-going"><img src="/foto/SVG2.svg" alt="" class="icon" />3 going 
+           <span class="event-free"><img src="/foto/Vector1.svg" alt="" class="icon" /> Free</span> 
+      
+        </div>
+      </article>
+      <!-- Карточка события 7 -->
+      <article class="event-card">
+        <img 
+          src="/foto/event_519189715.webp.svg" 
+          alt="Event 7" 
+          class="event-image"
+        />
+        <div class="event-info">
+          <h3 class="event-title">Free Christian Singles’ Dinner</h3>
+          <p class="event-category">Hobbies and Passions (10 km)</p>
+          <p class="event-date"> <img src="/foto/SVG3.svg" alt="" class="icon" />FRI, MAR 29 · 6:00 PM PDT</p>
+          <p class="event-going"><img src="/foto/SVG2.svg" alt="" class="icon" />3 going 
+           <span class="event-free"><img src="/foto/Vector1.svg" alt="" class="icon" /> Free</span> 
+      
+        </div>
+      </article>
+      <!-- Карточка события 8 -->
+      <article class="event-card">
+        <img 
+          src="/foto/event_519614558.webp.svg" 
+          alt="Event 8" 
+          class="event-image"
+        />
+        <div class="event-info">
+          <h3 class="event-title">In-person: Deep Dive into
+            RAG Architectures (Food
+            served)</h3>
+          <p class="event-category">Hobbies and Passions (50 km)</p>
+          <p class="event-date"> <img src="/foto/SVG3.svg" alt="" class="icon" />THU, MAR 14 · 5:00 PM PDT</p>
+          <p class="event-going"><img src="/foto/SVG2.svg" alt="" class="icon" />13 going 
+           <span class="event-free"><img src="/foto/Vector1.svg" alt="" class="icon" /> Free</span> 
+      
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <div class="event-card1111">
+    <article class="event-cardQ1">
+      <div class="event-imageQ">
+        <!-- Замените src на реальную картинку при необходимости -->
+        <img src="/foto/6event_518898207.webp.svg" alt="Event Image">
+      </div>
+      <div class="event-detailsQ">
+        <div class="event-dateQ">WED, MAR 13 • 11:30 PM UTC</div>
+        <h2 class="event-titleQ">
+          All Nations - Manhattan Missions Church Bible Study
+        </h2>
+        <div class="event-metaQ">
+          <span class="event-categoryQ">Hobbies and Passions (25 km)</span>
+          <span class="event-attendeesQ">69 attendees</span>
+        </div>
+      </div>
+    </article>
+    
+    
+    <article class="event-cardQ2">
+      <div class="event-imageQ">
+        <img src="/foto/5event_519218942.webp.svg" alt="Event Image">
+      </div>
+      <div class="event-detailsQ">
+        <div class="event-dateQ">SAT, MAR 21 • 7:30 PM UTC</div>
+        <h2 class="event-titleQ">
+          INFJ Personality Type - Coffee Shop Meet & Greet
+        </h2>
+        <div class="event-metaQ">
+          <span class="event-categoryQ">Hobbies and Passions (25 km)</span>
+          <span class="event-attendeesQ">99 attendees</span>
+        </div>
+      </div>
+    </article>
+    <article class="event-cardQ3">
+      <div class="event-imageQ">
+        <img src="/foto/5event_519218942.webp.svg" alt="Event Image">
+      </div>
+      <div class="event-detailsQ">
+        <div class="event-dateQ">SAT, MAR 21 • 7:30 PM UTC</div>
+        <h2 class="event-titleQ">
+          INFJ Personality Type - Coffee Shop Meet & Greet
+        </h2>
+        <div class="event-metaQ">
+          <span class="event-categoryQ">Hobbies and Passions (25 km)</span>
+          <span class="event-attendeesQ">99 attendees</span>
+        </div>
+      </div>
+    </article>
+    </div>
+
+
+
+
+
+
+  <!-- Блок с онлайн событиями -->
+  <section class="events-section">
+    <div class="section-title">
+      <h2>Upcoming online events</h2>
+    </div>
+    <div class="events-grid">
+      <!-- Карточка онлайн-события 1 -->
+      <article class="event-card">
+        <img 
+          src="/foto/event_519688853.webp.svg" 
+          alt="Online Event 1" 
+          class="event-image"
+        />
+        <div class="event-info">
+          <h3 class="event-title">Amazing On-Demand 15
+            Min Interviews with Top
+            Coaches and Speakers</h3>
+          <p class="event-category">Business (25 km)</p>
+          <p class="event-date"> <img src="/foto/SVG3.svg" alt="" class="icon" />THU, MAR 14 · 6:00 PM PDT</p>
+          <p class="event-going"><img src="/foto/SVG2.svg" alt="" class="icon" />3 going 
+           <span class="event-free"><img src="/foto/Vector1.svg" alt="" class="icon" /> Free</span> 
+      
+        </div>
+      </article>
+      <!-- Карточка онлайн-события 2 -->
+      <article class="event-card">
+        <img 
+          src="/foto/272x153.webp.svg" 
+          alt="Online Event 2" 
+          class="event-image"
+        />
+        <div class="event-info">
+          <h3 class="event-title">Vision Pro Developers Online Meetup</h3>
+          <p class="event-category">Technology</p>
+          <p class="event-date"> <img src="/foto/SVG3.svg" alt="" class="icon" />WED, MAR 18 · 7:00 PM PDT</p>
+          <p class="event-going"><img src="/foto/SVG2.svg" alt="" class="icon" />3 going 
+           <span class="event-free"><img src="/foto/Vector1.svg" alt="" class="icon" /> Free</span> 
+      
+        </div>
+      </article>
+      <!-- Карточка онлайн-события 3 -->
+      <article class="event-card">
+        <img 
+          src="/foto/event_519453986.webp.svg" 
+          alt="Online Event 3" 
+          class="event-image"
+        />
+        <div class="event-info">
+          <h3 class="event-title">Significant Musical Moments</h3>
+          <p class="event-category">Hobbies and Passions (10 km)</p>
+          <p class="event-date"> <img src="/foto/SVG3.svg" alt="" class="icon" />WED, MAR 13 · 6:00 PM PDT</p>
+          <p class="event-going"><img src="/foto/SVG2.svg" alt="" class="icon" />3 going 
+           <span class="event-free"><img src="/foto/Vector1.svg" alt="" class="icon" /> Free</span> 
+      
+        </div>
+      </article>
+      <!-- Карточка онлайн-события 4 -->
+      <article class="event-card">
+        <img 
+          src="/foto/event_518832943.webp.svg" 
+          alt="Online Event 4" 
+          class="event-image"
+        />
+        <div class="event-info">
+          <h3 class="event-title">FREE Webinar: Introduction to Power BI</h3>
+          <p class="event-category">Technology</p>
+          <p class="event-date"> <img src="/foto/SVG3.svg" alt="" class="icon" />THU, MAR 14 · 7:00 PM PDT</p>
+          <p class="event-going"><img src="/foto/SVG2.svg" alt="" class="icon" />43 going 
+           <span class="event-free"><img src="/foto/Vector1.svg" alt="" class="icon" /> Free</span> 
+      
+        </div>
+      </article>
+    </div>
+  </section>
+
+<!-- -------------------------------- -->
+<div class="event-card1111">
+<article class="event-cardQ1">
+  <div class="event-imageQ">
+    <!-- Замените src на реальную картинку при необходимости -->
+    <img src="/foto/6event_518898207.webp.svg" alt="Event Image">
+  </div>
+  <div class="event-detailsQ">
+    <div class="event-dateQ">WED, MAR 13 • 11:30 PM UTC</div>
+    <h2 class="event-titleQ">
+      All Nations - Manhattan Missions Church Bible Study
+    </h2>
+    <div class="event-metaQ">
+      <span class="event-categoryQ">Hobbies and Passions (25 km)</span>
+      <span class="event-attendeesQ">69 attendees</span>
+    </div>
+  </div>
+</article>
+
+
+<article class="event-cardQ2">
+  <div class="event-imageQ">
+    <img src="/foto/5event_519218942.webp.svg" alt="Event Image">
+  </div>
+  <div class="event-detailsQ">
+    <div class="event-dateQ">SAT, MAR 21 • 7:30 PM UTC</div>
+    <h2 class="event-titleQ">
+      INFJ Personality Type - Coffee Shop Meet & Greet
+    </h2>
+    <div class="event-metaQ">
+      <span class="event-categoryQ">Hobbies and Passions (25 km)</span>
+      <span class="event-attendeesQ">99 attendees</span>
+    </div>
+  </div>
+</article>
+<article class="event-cardQ3">
+  <div class="event-imageQ">
+    <img src="/foto/5event_519218942.webp.svg" alt="Event Image">
+  </div>
+  <div class="event-detailsQ">
+    <div class="event-dateQ">SAT, MAR 21 • 7:30 PM UTC</div>
+    <h2 class="event-titleQ">
+      INFJ Personality Type - Coffee Shop Meet & Greet
+    </h2>
+    <div class="event-metaQ">
+      <span class="event-categoryQ">Hobbies and Passions (25 km)</span>
+      <span class="event-attendeesQ">99 attendees</span>
+    </div>
+  </div>
+</article>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- ----------------------------------------- -->
+
+  <div class="hero11">
+
+  <div class="hero">
+    <div class="hero-content">
+      <h1>Join Meetup</h1>
+      <div class="hero-imageQ">
+        <!-- Замените на свою иллюстрацию -->
+        <img 
+          src="/foto/image.svg" 
+          alt="Join Meetup Illustration"
+        />
+      </div>
+      <p>
+        People use Meetup to meet new people, learn new things, find support, 
+        get out of their comfort zones, and pursue their passions, together. 
+        Membership is free.
+      </p>
+      <a href="#" class="btn-signup">Sign Up</a>
+    </div>
+    <div class="hero-image">
+      <!-- Замените на свою иллюстрацию -->
+      <img 
+        src="/foto/image.svg" 
+        alt="Join Meetup Illustration"
+      />
+    </div>
+  </div>
+
+  <main>
+    <!-- Explore top categories -->
+    <section class="categories">
+      <h2>Explore top categories</h2>
+      <div class="categories-list">
+        <!-- Пример одной категории -->
+        <div class="category-item">
+          <img 
+            src="/foto/travel_and_outdoor.svg.svg" 
+            alt="Category Icon"
+          />
+          <span>Travel and Outdoor</span>
+        </div>
+        <div class="category-item">
+          <img 
+            src="/foto/social_activities.svg.svg" 
+            alt="Category Icon"
+          />
+          <span>Social Activities</span>
+        </div>
+        <div class="category-item">
+          <img 
+            src="/foto/hobbies_and_passions.svg fill.svg" 
+            alt="Category Icon"
+          />
+          <span>Hobbies and Passions</span>
+        </div>
+        <div class="category-item">
+          <img 
+            src="/foto/sports_and_fitness.svg.svg" 
+            alt="Category Icon"
+          />
+          <span>Sports and Fitness</span>
+        </div>
+        <div class="category-item">
+          <img 
+            src="/foto/health_and_wellness.svg.svg" 
+            alt="Category Icon"
+          />
+          <span>Health and Wellbeing</span>
+        </div>
+        <div class="category-item">
+          <img 
+            src="/foto/technology.svg fill.svg" 
+            alt="Category Icon"
+          />
+          <span>Technology</span>
+        </div>
+        <div class="category-item">
+          <img 
+            src="/foto/art_and_culture.svg.svg" 
+            alt="Category Icon"
+          />
+          <span>Art and Culture</span>
+        </div>
+        <div class="category-item">
+          <img 
+            src="/foto/games.svg.svg" 
+            alt="Category Icon"
+          />
+          <span>Games</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popular cities -->
+    <section class="popular-cities">
+      <h2>Popular cities on Meetup</h2>
+      <p class="subtitle">
+        Looking for fun things to do near you? See what Meetup organizers are planning 
+        in cities around the country.
+      </p>
+      <div class="cities-list">
+        <div class="city-item">
+          <img 
+            src="/foto/Link → new_york.webp.svg" 
+            alt="New York" 
+            class="city-image"
+          />
+          <span>New York</span>
+        </div>
+        <div class="city-item">
+          <img 
+            src="/foto/Link → san_francisco.webp.svg" 
+            alt="San Francisco" 
+            class="city-image"
+          />
+          <span>San Francisco</span>
+        </div>
+        <div class="city-item">
+          <img 
+            src="/foto/Link → chicago.webp.svg" 
+            alt="Chicago" 
+            class="city-image"
+          />
+          <span>Chicago</span>
+        </div>
+        <div class="city-item">
+          <img 
+            src="/foto/Link → nashville.webp.svg" 
+            alt="Nashville" 
+            class="city-image"
+          />
+          <span>Nashville</span>
+        </div>
+
+        <div class="city-itemQ">
+        <div class="city-item">
+          <img 
+            src="/foto/Link → miami.webp.svg" 
+            alt="Miami" 
+            class="city-image"
+          />
+          <span>Miami</span>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- How Meetup works -->
+    <section class="how-it-works">
+      <h2>How Meetup works</h2>
+      <div class="hiw-cards">
+        <div class="hiw-card">
+          <h3><span class="event-free"><img src="/foto/search.svg.svg" alt="" class="icon" /></span>Discover events and groups</h3>
+          <div class="span1"><p>See who's hosting local events for all the things you love.</p>
+          <p>
+            <a href="#" class="hiw-link">Search events and groups</a>
+          </p>
+        </div>
+        </div>
+        <div class="hiw-card">
+          <h3><span class="event-free"><img src="/foto/plus.svg.svg" alt="" class="icon" /></span>Start a group to host events</h3>
+          <div class="span2"><p>Create your own Meetup group, and draw a community of millions.</p>
+          <p>
+            <a href="#" class="hiw-link">Start a group</a>
+          </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <section class="friendships-section">
+    <div class="friendships-content">
+      <h2>Friendships are made on Meetup</h2>
+      <p class="intro-text">
+        Since 2002, members have used Meetup to make new friends, meet new people, 
+        spend time on hobbies, and connect with locals over shared interests. 
+        Learn how
+      </p>
+    </div>
+
+    <!-- Cards with articles -->
+    <div class="cards-container">
+      <article class="card">
+        <img 
+          src="/foto/Link → first_article.webp.svg" 
+          alt="Friends at Brunch"
+        />
+        <h3>I Used Meetup to Make Friends at Brunch</h3>
+        <p>
+          New Jersey-based writer and college student Brianna Stryker 
+          learned how to make meaningful connections. Learn how she 
+          used Meetup to make new friends by joining a Girl’s Night 
+          Out Meetup group.
+        </p>
+        <a href="#" class="read-more">Read more</a>
+      </article>
+
+      <article class="card">
+        <img 
+          src="/foto/Link → second_article.webp.svg" 
+          alt="Casual Connections"
+        />
+        <h3>How to Turn Casual Connections into Close Friendships</h3>
+        <p>
+          Making a new friend can be harder to do than we think. But 
+          the secret is here: here's what experts say about how to 
+          fulfill them.
+        </p>
+        <a href="#" class="read-more">Read more</a>
+      </article>
+
+      <article class="card">
+        <img 
+          src="/foto/Link → third_article.webp.svg" 
+          alt="Friends number"
+        />
+        <h3>Do You Have the “Right” Number of Friends?</h3>
+        <p>
+          If you’ve ever asked yourself this question, you’re not alone. 
+          Learn about the three tiers of friendship and how to fulfill them.
+        </p>
+        <a href="#" class="read-more">Read more</a>
+      </article>
+    </div>
+  </section>
+</div>
+
+
+  <footer class="site-footer">
+    <!-- CTA-блок в верхней части футера -->
+    <div class="footer-cta">
+      <p>Create your own Meetup group.</p>
+      <a href="#" class="btn-get-started">Get Started</a>
+    </div>
+<div class="footer-top">
+    <!-- Основные ссылки футера -->
+    <div class="footer-links">
+      <!-- Колонка 1 -->
+      <div class="footer-column">
+        <h4>Your Account</h4>
+        <ul>
+          <li><a href="#">Sign up</a></li>
+          <li><a href="#">Log in</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Become an Affiliate</a></li>
+        </ul>
+      </div>
+      <!-- Колонка 2 -->
+      <div class="footer-column">
+        <h4>Discover</h4>
+        <ul>
+          <li><a href="#">Groups</a></li>
+          <li><a href="#">Calendar</a></li>
+          <li><a href="#">Topics</a></li>
+          <li><a href="#">Cities</a></li>
+          <li><a href="#">Online Events</a></li>
+          <li><a href="#">Local Guides</a></li>
+          <li><a href="#">Make Friends</a></li>
+        </ul>
+      </div>
+      <!-- Колонка 3 -->
+      <div class="footer-column">
+        <h4>Meetup</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Meetup Pro</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Apps</a></li>
+          <li><a href="#">Podcast</a></li>
+        </ul>
+      </div>
+      </div>
+      </div>
+      <!-- Колонка 4 (иконки соцсетей) -->
+       <div class="footer-column-main">
+      <div class=" social-column">
+        <h4>Follow us</h4>
+        <div class="social-icons">
+          <a href="#" title="Facebook">
+            <img src="/foto/Link - Meetup on Facebook → SVG.svg" alt="Facebook" />
+          </a>
+          <a href="#" title="Twitter">
+            <img src="/foto/Link - Meetup on Twitter → SVG.svg" alt="Twitter" />
+          </a>
+          <a href="#" title="Instagram">
+            <img src="/foto/Link - Instagram → SVG.svg" alt="Instagram" />
+          </a>
+          <a href="#" title="YouTube">
+            <img src="/foto/Link - Meetup on YouTube → SVG.svg" alt="YouTube" />
+          </a>
+          <a href="#" title="TikTok">
+            <img src="/foto/Link - TikTok → SVG.svg" alt="TikTok" />
+          </a>
+        </div>
+      </div>
+      <!-- Колонка 5 (магазины приложений) -->
+       <!-- <div class="store1"> -->
+      <div class="store-badges">
+        <a href="#" class="store-badge">
+          <img 
+            src="/foto/Link - Download app from Google Play → download_en-US.svg.svg" 
+            alt="Google Play" 
+          />
+        </a>
+        <a href="#" class="store-badge">
+          <img 
+            src="/foto/Link - Download app from App Store → download_en-US.svg.svg" 
+            alt="App Store" 
+          />
+        </a>
+      <!-- </div> -->
+      </div>
+      </div>
+    </div>
+
+    <!-- Нижняя строка футера -->
+    <div class="footer-bottom">
+     <div class="footer-bottom1"> <p>&copy; 2024 Meetup</p></div>
+      <div class="footer-policies">
+        <p><a href="#">Terms of Service</a></p>
+        <p><a href="#">Privacy Policy</a></p>
+        <p><a href="#">Do Not Sell or Share My Personal Data</a></p>
+        <p><a href="#">Cookie Policy</a></p>
+        <p><a href="#">Help</a></p>
+      </div>
+    </div>
+  </footer>
+ 
+</body>
+</html>
