@@ -1,15 +1,11 @@
-/* =========================================
-   1. Сброс некоторых стандартных стилей браузера
-   ========================================= */
+
    * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  /* =========================================
-     2. Общие стили для страницы
-     ========================================= */
+
   body {
     font-family: Arial, sans-serif;
     color: #333;
@@ -23,16 +19,14 @@
     
   }
   
-  /* =========================================
-     3. Шапка сайта (site-header)
-     ========================================= */
+ 
   .site-header {
     background-color: #fff;
     border-bottom: 1px solid #eee;
     padding: 1rem 0;
     max-width: 1512px;
     margin: 0 auto;
-    border: 2px red solid; 
+    /* border: 2px red solid;  */
     
   }
 
@@ -53,7 +47,7 @@
     font-size: 1.2rem;
     text-decoration: none;
     
-    color: #ff473e; /* Выберите любой цвет */
+    color: #ff473e; 
   }
   
   /* Поисковая строка */
@@ -64,7 +58,7 @@
     /* gap: 0.5rem; */
   }
   
-  .search-bar input {
+  #search1 {
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 4px; 
@@ -74,14 +68,29 @@
   background-size: 16px 16px; /* подберите нужный размер иконки */
   padding-left: 32px; 
   }
+   #mountain {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    width: 296px;
+    height: 40px;
+    /* background: url('/foto/VectorS.svg') no-repeat 8px center; */
+  background-size: 16px 16px; /* подберите нужный размер иконки */
+  padding-left: 32px; 
+ 
+  }
+  #mountain::placeholder {
+    color: #000;
+    opacity: 1;
+}
   
-  .search-bar select {
+  /* .search-bar select {
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 4px;
     height: 40px;
     width: 296px;
-  }
+  } */
   .search-button {
     background-color: #ff4a4a;
     border: none;
@@ -105,7 +114,7 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    border: 2px red solid;
+    /* border: 2px red solid; */
   }
   
   .header-actions a {
@@ -142,15 +151,13 @@
     font-size: 16px;
     font-weight: 400;
   }
-  /* =========================================
-     4. Главная секция (hero-section)
-     ========================================= */
+  
   .hero-section {
     width: 100%;
     max-width: 1196px;
     margin: 2rem auto;
     display: flex;
-    flex-wrap: wrap; /* Адаптация под мобильные */
+    flex-wrap: wrap; 
     gap: 2rem;
     align-items: center;
     padding: 0;
@@ -161,7 +168,7 @@
   
   .hero-content {
     flex: 1 1 400px; 
-    /* border: 2px red solid;  */
+    /* border: 2px rgb(56, 171, 130) solid;  */
   }
   
   .hero-content h1 {
@@ -198,11 +205,10 @@
   .hero-illustration img {
     width: 379px;
     height: 269px;
+    
   }
   
-  /* =========================================
-     5. Заголовок списка событий (page-header)
-     ========================================= */
+ 
   .page-header {
     display: flex;
     align-items: center;
@@ -247,9 +253,7 @@
   
  
   
-  /* =========================================
-     6. Основные блоки с событиями
-     ========================================= */
+ 
   
  
   .section-title {
@@ -272,7 +276,7 @@
 
   }
   
-  /* Сетка событий */
+ 
   .events-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -356,7 +360,7 @@
   margin-right: 8px;
   }
   
- /* Hero Section */
+
  .hero {
     display: flex;
     flex-wrap: wrap; /* чтобы на узких экранах блоки переносились */
@@ -366,15 +370,18 @@
     padding: 2rem;
     border-bottom: 1px solid #ddd;
   }
-  
-  .hero-content {
-    flex: 1 1 400px; /* чтобы текстовый блок занимал минимум 400px */
+  .hero11{
+    margin-top: 140px;
+    /* border: 2px red solid; */
+  }
+  /* .hero-content {
+    flex: 1 1 400px; 
     margin-right: 2rem;
     width: 1192px;
     height: 136px;
-  }
+  } */
   
-  .hero-content h1 {
+  /* .hero-content h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
   }
@@ -382,7 +389,7 @@
   .hero-content p {
     margin-bottom: 1.5rem;
     max-width: 500px;
-  }
+  } */
   
   .btn-signup {
     display: inline-block;
@@ -428,6 +435,7 @@
   /* Categories */
   .categories {
     margin-bottom: 2rem;
+    /* border: 2px red solid; */
   }
   
   .categories h2 {
@@ -567,9 +575,7 @@
   }
   
 
-  /* =========================================
-     7. Футер
-     ========================================= */
+ 
   .page-footer {
     text-align: center;
     padding: 1rem 0;
@@ -889,7 +895,7 @@
     margin-right: 27px;
     /* margin-left: 1px; */
     /* padding-right: 10px; */
-    border: 2px rgb(213, 139, 28) solid;
+    /* border: 2px rgb(213, 139, 28) solid; */
     }
   
     .search-bar {
@@ -905,8 +911,8 @@
       padding-left: 32px; 
       box-sizing: border-box;
     }
-    .search-bar select {
-    display: none;  
+    #mountain{
+      display: none;
     }
     .search-button img {
      
@@ -934,17 +940,6 @@
      
     }
 
-
-
-
-
-
-
-
-
-
-
-
     body{
       max-width: 393px;
      
@@ -960,10 +955,10 @@
     .search-bar select{
       display: none;
     }
-    .hero-illustration{
+    .hero-illustration img {
       width: 215px;
       height: 152px;
-      padding: 130px 20px 50px 0px;
+     
       /* border: 2px rgb(213, 139, 28) solid; */
     }
     .view-all-link{
@@ -997,6 +992,7 @@
     max-width: 100%;
     height: auto;
     display: block; 
+    /* border: 2px rgb(105, 67, 160) solid */
   }
   .hero-content{
     max-width: 342px;
@@ -1007,7 +1003,7 @@
   }
  
   .hero-content h1 {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
     margin-left: 0;
   }
@@ -1016,7 +1012,9 @@
     font-weight: 400;
     line-height: 24px;
     margin-left: 1px;
-    margin-right: 20px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    /* border: 2px red solid; */
     
   }
 
@@ -1034,6 +1032,7 @@
     font-weight: 600px;
   }
   .page-header img{ 
+    /* margin-top: 10px; */
     margin-right: 67px;
   }
   .event-card{
@@ -1062,7 +1061,7 @@
     width: 97px;
     height: 55px;
    
-    /* border: 2px red solid; */
+    /* border: 2px rgb(221, 36, 61) solid; */
   }
   .event-cardQ2 img{
     width: 97px;
@@ -1072,6 +1071,7 @@
   .event-cardQ3 img{
     width: 97px;
     height: 55px;
+    /* border: 2px red solid; */
    
   }
   .event-detailsQ{
@@ -1099,11 +1099,11 @@
 .event-detailsQ .event-metaQ {
   margin: 3px 0; 
 }
-  .event-image{
-    /* border: 2px red solid; */
-    padding: 0 0 0 0;
-    margin-right: 1px;
-  }
+ 
+.hero11{
+  margin-top: 70px;
+}
+
   .hero-image{
     display: none;
   }
@@ -1122,6 +1122,9 @@
     /* border: 2px red solid; */
 
   }
+  .hero-section{
+    margin-bottom: 16px;
+  }
   .btn-signup{
     width: 192px;
     height: 40px;
@@ -1131,6 +1134,7 @@
     margin-left: 20px;
   }
   .categories{
+   
     margin-left: 40px;
   }
 
@@ -1254,7 +1258,7 @@ font-size: 14px;
   }
   .footer-column ul{
     width: 70px;
-    border: 2px rgb(86, 219, 130) solid;
+    /* border: 2px rgb(86, 219, 130) solid; */
   }
 
 

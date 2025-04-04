@@ -2,44 +2,30 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale =1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>MyMeet — Events near Mountain View, CA</title>
   
   <link rel="stylesheet" href="styleF1.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
- 
+  <!-- Header -->
   <header class="site-header">
     <div class="header-inner">
-      
       <div class="logo">
         <img src="/foto/Link - Meetup logo.svg" alt="MyMeet" />
       </div>
-      
-      <!-- Поисковая строка с выбором города -->
+      <!-- Поисковая строка -->
       <div class="search-bar">
-        <input type="text" placeholder="Search events" />
-        <select>
-          <option>Mountain View, CA</option>
-         
-        </select>
+        <input id="search1" type="text" placeholder="Search events" />
+        <input id="mountain" type="text" placeholder="Mountain View, CA" />
         <button type="submit" class="search-button" aria-label="Найти события">
-          <!-- Заменяем <svg> на <img> с путём к вашей иконке -->
-          <img 
-            src="/foto/Button - Search events.svg" 
-            alt="Иконка поиска" 
-           
-          />
+          <img src="/foto/Button - Search events.svg" alt="Иконка поиска" />
         </button>
-
       </div>
-      
-      <!-- Языковая панель/кнопки входа и регистрации -->
+      <!-- Языковая панель и кнопки -->
       <div class="header-actions">
         <img src="/foto/VectorW.svg" alt="Event Image">
         <a href="#">English</a>
@@ -48,319 +34,147 @@
       </div>
     </div>
   </header>
-  <!-- чччччччччччччччччччччччч -->
-  <div class="main11">  
 
-<div class="MM-event">
-  
-<div class="MM-event11">
-  <div class="page-header1">
-    <h1>Events near New York, NY</h1>
-    <nav class="top-nav">
-      <!-- Можно добавить дополнительные ссылки, если нужно -->
-      <a href="#" class="active">Events</a>
-    </nav>
+  <!-- Основной контент -->
+  <div class="main11">
+    <div class="MM-event">
+      <div class="MM-event11">
+        <div class="page-header1">
+          <h1>Events near New York, NY</h1>
+          <nav class="top-nav">
+            <a href="#" class="active">Events</a>
+          </nav>
+        </div>
+        <!-- Фильтры -->
+        <section class="filters">
+          <!-- Селект для фильтра по типу (online/offline) -->
+          <select id="typeFilter">
+            <option value="">Any type</option>
+            <option value="online Event">Online</option>
+            <option value="offline Event">Offline</option>
+          </select>
+          <!-- Селект для фильтра по дистанции (в км) -->
+          <select id="distanceFilter">
+            <option value="">Any distance</option>
+            <option value="5 km">5 km</option>
+            <option value="15 km">15 km</option>
+            <option value="25 km">25 km</option>
+          </select>
+          <!-- Селект для фильтра по категории -->
+          <select id="categoryFilter">
+            <option class="any-button" value="">Any category</option>
+            <option value="Hobbies and Passions">Hobbies and Passions</option>
+            <option value="Technology">Technology</option>
+          </select>
+        </section>
+        <!-- Контейнер, куда будут добавляться карточки событий динамически -->
+        <div class="events-list"></div>
+      </div>
+      <div class="MM-event22">
+        <div class="map-header">
+          <h2>Find events near</h2>
+          <h1>New York, NY</h1>
+        </div>
+        <div class="map-card">
+          <button class="close-button" aria-label="Close">×</button>
+          <button class="browse-button" aria-label="Browse in map">
+            Browse in map
+            <span class="expand-icon">⤢</span>
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 
-   <!-- Фильтры -->
-   <section class="filters">
-    <select>
-      <option>Any type</option>
-    </select>
-  
-    <select>
-      <option>Any distance</option>
-    </select>
-    
-    <select>
-      <option>Any category</option>
-    </select>
-  </section>
-
-  <!-- Список мероприятий -->
-  <div class="events-list">
-    <!-- Карточка мероприятия #1 -->
-    <article class="event-card">
-      <div class="event-image">
-        <!-- Замените src на реальную картинку при необходимости -->
-        <img src="/foto/6event_518898207.webp.svg" alt="Event Image">
+  <!-- Footer -->
+  <div class="footor11">
+    <footer class="site-footer">
+      <div class="footer-cta">
+        <p>Create your own Meetup group.</p>
+        <a href="#" class="btn-get-started">Get Started</a>
       </div>
-      <div class="event-details">
-        <div class="event-date">WED, MAR 13 • 11:30 PM UTC</div>
-        <h2 class="event-title">
-          All Nations - Manhattan Missions Church Bible Study
-        </h2>
-        <div class="event-meta">
-          <span class="event-category">Hobbies and Passions (25 km)</span>
-          <span class="event-attendees">69 attendees</span>
+      <div class="footer-top">
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Your Account</h4>
+            <ul>
+              <li><a href="#">Sign up</a></li>
+              <li><a href="#">Log in</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Become an Affiliate</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Discover</h4>
+            <ul>
+              <li><a href="#">Groups</a></li>
+              <li><a href="#">Calendar</a></li>
+              <li><a href="#">Topics</a></li>
+              <li><a href="#">Cities</a></li>
+              <li><a href="#">Online Events</a></li>
+              <li><a href="#">Local Guides</a></li>
+              <li><a href="#">Make Friends</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Meetup</h4>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Meetup Pro</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Apps</a></li>
+              <li><a href="#">Podcast</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </article>
-    <article class="event-cardQ1">
-      <div class="event-imageQ">
-        <!-- Замените src на реальную картинку при необходимости -->
-        <img src="/foto/6event_518898207.webp.svg" alt="Event Image">
-      </div>
-      <div class="event-detailsQ">
-        <div class="event-dateQ">WED, MAR 13 • 11:30 PM UTC</div>
-        <h2 class="event-titleQ">
-          All Nations - Manhattan Missions Church Bible Study
-        </h2>
-        <div class="event-metaQ">
-          <span class="event-categoryQ">Hobbies and Passions (25 km)</span>
-          <span class="event-attendeesQ">69 attendees</span>
+      <div class="footer-column-main">
+        <div class="social-column">
+          <h4>Follow us</h4>
+          <div class="social-icons">
+            <a href="#" title="Facebook">
+              <img src="/foto/Link - Meetup on Facebook → SVG.svg" alt="Facebook" />
+            </a>
+            <a href="#" title="Twitter">
+              <img src="/foto/Link - Meetup on Twitter → SVG.svg" alt="Twitter" />
+            </a>
+            <a href="#" title="Instagram">
+              <img src="/foto/Link - Instagram → SVG.svg" alt="Instagram" />
+            </a>
+            <a href="#" title="YouTube">
+              <img src="/foto/Link - Meetup on YouTube → SVG.svg" alt="YouTube" />
+            </a>
+            <a href="#" title="TikTok">
+              <img src="/foto/Link - TikTok → SVG.svg" alt="TikTok" />
+            </a>
+          </div>
+        </div>
+        <div class="store-badges">
+          <a href="#" class="store-badge">
+            <img src="/foto/Link - Download app from Google Play → download_en-US.svg.svg" alt="Google Play" />
+          </a>
+          <a href="#" class="store-badge">
+            <img src="/foto/Link - Download app from App Store → download_en-US.svg.svg" alt="App Store" />
+          </a>
         </div>
       </div>
-    </article>
-    <article class="event-cardQ1">
-      <div class="event-imageQ">
-        <!-- Замените src на реальную картинку при необходимости -->
-        <img src="/foto/6event_518898207.webp.svg" alt="Event Image">
-      </div>
-      <div class="event-detailsQ">
-        <div class="event-dateQ">WED, MAR 13 • 11:30 PM UTC</div>
-        <h2 class="event-titleQ">
-          All Nations - Manhattan Missions Church Bible Study
-        </h2>
-        <div class="event-metaQ">
-          <span class="event-categoryQ">Hobbies and Passions (25 km)</span>
-          <span class="event-attendeesQ">69 attendees</span>
+      <div class="footer-bottom">
+        <div class="footer-bottom1">
+          <p>&copy; 2024 Meetup</p>
+        </div>
+        <div class="footer-policies">
+          <p><a href="#">Terms of Service</a></p>
+          <p><a href="#">Privacy Policy</a></p>
+          <p><a href="#">Do Not Sell or Share My Personal Data</a></p>
+          <p><a href="#">Cookie Policy</a></p>
+          <p><a href="#">Help</a></p>
         </div>
       </div>
-    </article>
-    <article class="event-cardQ1">
-      <div class="event-imageQ">
-        <!-- Замените src на реальную картинку при необходимости -->
-        <img src="/foto/6event_518898207.webp.svg" alt="Event Image">
-      </div>
-      <div class="event-detailsQ">
-        <div class="event-dateQ">WED, MAR 13 • 11:30 PM UTC</div>
-        <h2 class="event-titleQ">
-          All Nations - Manhattan Missions Church Bible Study
-        </h2>
-        <div class="event-metaQ">
-          <span class="event-categoryQ">Hobbies and Passions (25 km)</span>
-          <span class="event-attendeesQ">69 attendees</span>
-        </div>
-      </div>
-    </article>
-
-    <!-- Карточка мероприятия #2 -->
-    <article class="event-card">
-      <div class="event-image">
-        <img src="/foto/5event_519218942.webp.svg" alt="Event Image">
-      </div>
-      <div class="event-details">
-        <div class="event-date">SAT, MAR 21 • 7:30 PM UTC</div>
-        <h2 class="event-title">
-          INFJ Personality Type - Coffee Shop Meet & Greet
-        </h2>
-        <div class="event-meta">
-          <span class="event-category">Hobbies and Passions (25 km)</span>
-          <span class="event-attendees">99 attendees</span>
-        </div>
-      </div>
-    </article>
-
-    <!-- Карточка мероприятия #3 -->
-    <article class="event-card">
-      <div class="event-image">
-        <img src="/foto/4event_519111663.webp.svg" alt="Event Image">
-      </div>
-      <div class="event-details">
-        <div class="event-date">WED, MAR 13 • 11:30 PM UTC</div>
-        <h2 class="event-title">
-          NYC AI Users - AI Tech Talks, Demo & Social: RAG Search and Customer Engagement
-        </h2>
-        <div class="event-meta">
-          <span class="event-category">Hobbies and Passions (25 km)</span>
-          <span class="event-attendees">43 attendees + 2 spots left</span>
-        </div>
-      </div>
-    </article>
-
-    <!-- Карточка мероприятия #4 -->
-    <article class="event-card">
-      <div class="event-image">
-        <img src="/foto/3event_519405643.webp.svg" alt="Event Image">
-      </div>
-      <div class="event-details">
-        <div class="event-date">THU, MAR 13 • 11:30 PM UTC</div>
-        <h2 class="event-title">
-          Book 40+ Appointments Per Month Using AI and Automation
-        </h2>
-        <div class="event-meta">
-          <span class="event-category">Hobbies and Passions (25 km)</span>
-          <span class="event-attendees">77 attendees</span>
-        </div>
-      </div>
-    </article>
-
-    <!-- Карточка мероприятия #5 -->
-    <article class="event-card">
-      <div class="event-image">
-        <img src="/foto/2event_519549716.webp.svg" alt="Event Image">
-      </div>
-      <div class="event-details">
-        <div class="event-date">MON, MAR 16 • 11:30 PM UTC</div>
-        <h2 class="event-title">
-          Dump writing group weekly meetup
-        </h2>
-        <div class="event-meta">
-          <span class="event-category">Hobbies and Passions (25 km)</span>
-          <span class="event-attendees">17 attendees</span>
-        </div>
-      </div>
-    </article>
-
-    <!-- Карточка мероприятия #6 -->
-    <article class="event-card">
-      <div class="event-image">
-        <img src="/foto/1event_519527424.webp.svg" alt="Event Image">
-      </div>
-      <div class="event-details">
-        <div class="event-date">WED, MAR 13 • 11:30 PM UTC</div>
-        <h2 class="event-title">
-          Over 40s, 50s, & 60s Senior Singles Chat, Meet & Dating Community
-        </h2>
-        <div class="event-meta">
-          <span class="event-category">Hobbies and Passions (25 km)</span>
-          <span class="event-attendees">29 attendees</span>
-        </div>
-      </div>
-    </article>
-
+    </footer>
   </div>
-</div>
-<div class="MM-event22">
-   <div class="map-header">
-      <h2>Find events near</h2>
-      <h1>New York, NY</h1>
-    </div>
-  <div class="map-card">
-    <!-- Заголовок (Find events near / New York, NY) -->
-   
-    
-    <!-- Кнопка закрытия (X) -->
-    <button class="close-button" aria-label="Close">×</button>
 
-    <!-- Кнопка "Browse in map" -->
-    <button class="browse-button" aria-label="Browse in map">
-      Browse in map
-      <!-- Иконка разворота/увеличения (можно заменить на свою) -->
-      <span class="expand-icon">⤢</span>
-    </button>
-  </div>
-</div>
-</div>
-  
-<div class="footor11">
-  <footer class="site-footer">
-    <!-- CTA-блок в верхней части футера -->
-    <div class="footer-cta">
-      <p>Create your own Meetup group.</p>
-      <a href="#" class="btn-get-started">Get Started</a>
-    </div>
-<div class="footer-top">
-    <!-- Основные ссылки футера -->
-    <div class="footer-links">
-      <!-- Колонка 1 -->
-      <div class="footer-column">
-        <h4>Your Account</h4>
-        <ul>
-          <li><a href="#">Sign up</a></li>
-          <li><a href="#">Log in</a></li>
-          <li><a href="#">Help</a></li>
-          <li><a href="#">Become an Affiliate</a></li>
-        </ul>
-      </div>
-      <!-- Колонка 2 -->
-      <div class="footer-column">
-        <h4>Discover</h4>
-        <ul>
-          <li><a href="#">Groups</a></li>
-          <li><a href="#">Calendar</a></li>
-          <li><a href="#">Topics</a></li>
-          <li><a href="#">Cities</a></li>
-          <li><a href="#">Online Events</a></li>
-          <li><a href="#">Local Guides</a></li>
-          <li><a href="#">Make Friends</a></li>
-        </ul>
-      </div>
-      <!-- Колонка 3 -->
-      <div class="footer-column">
-        <h4>Meetup</h4>
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Meetup Pro</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Apps</a></li>
-          <li><a href="#">Podcast</a></li>
-        </ul>
-      </div>
-      </div>
-      </div>
-      <!-- Колонка 4 (иконки соцсетей) -->
-       <div class="footer-column-main">
-      <div class=" social-column">
-        <h4>Follow us</h4>
-        <div class="social-icons">
-          <a href="#" title="Facebook">
-            <img src="/foto/Link - Meetup on Facebook → SVG.svg" alt="Facebook" />
-          </a>
-          <a href="#" title="Twitter">
-            <img src="/foto/Link - Meetup on Twitter → SVG.svg" alt="Twitter" />
-          </a>
-          <a href="#" title="Instagram">
-            <img src="/foto/Link - Instagram → SVG.svg" alt="Instagram" />
-          </a>
-          <a href="#" title="YouTube">
-            <img src="/foto/Link - Meetup on YouTube → SVG.svg" alt="YouTube" />
-          </a>
-          <a href="#" title="TikTok">
-            <img src="/foto/Link - TikTok → SVG.svg" alt="TikTok" />
-          </a>
-        </div>
-      </div>
-      <!-- Колонка 5 (магазины приложений) -->
-       <!-- <div class="store1"> -->
-      <div class="store-badges">
-        <a href="#" class="store-badge">
-          <img 
-            src="/foto/Link - Download app from Google Play → download_en-US.svg.svg" 
-            alt="Google Play" 
-          />
-        </a>
-        <a href="#" class="store-badge">
-          <img 
-            src="/foto/Link - Download app from App Store → download_en-US.svg.svg" 
-            alt="App Store" 
-          />
-        </a>
-      <!-- </div> -->
-      </div>
-      </div>
-    </div>
-
-    <!-- Нижняя строка футера -->
-    <div class="footer-bottom">
-     <div class="footer-bottom1"> <p>&copy; 2024 Meetup</p></div>
-      <div class="footer-policies">
-        <p><a href="#">Terms of Service</a></p>
-        <p><a href="#">Privacy Policy</a></p>
-        <p><a href="#">Do Not Sell or Share My Personal Data</a></p>
-        <p><a href="#">Cookie Policy</a></p>
-        <p><a href="#">Help</a></p>
-      </div>
-    </div>
-  </footer>
-
-
-</div>
-
-
-
- 
+  <!-- Подключаем JS -->
+  <script src="scriptJJ.js"></script>
 </body>
 </html>
