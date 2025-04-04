@@ -1,10 +1,10 @@
-// Объявим массив событий глобально, чтобы был доступен в функции фильтрации.
+// Объявляю массив событий глобально, чтобы был доступен в функции фильтрации.
 const events = [
     {
       image: '/foto/6event_518898207.webp.svg',
       date: 'WED, MAR 13 • 11:30 PM UTC',
       title: 'All Nations - Manhattan Missions Church Bible Study',
-      // В category укажем текст, включающий дистанцию, например "Hobbies and Passions (5 km)"
+     
       category: 'Hobbies and Passions (5 km)',
       attendees: '69 attendees',
       // Тип события: "online Event" или "offline Event"
@@ -64,7 +64,7 @@ const events = [
   function renderEvents() {
     const eventsList = document.querySelector('.events-list');
     
-    // Очищаем контейнер перед рендером
+    // Очищаю контейнер перед рендером
     eventsList.innerHTML = '';
   
     // Считываем выбранные значения из селектов
@@ -130,19 +130,19 @@ const events = [
       eventType.classList.add('event-attendees');
       eventType.textContent = event.type;
   
-      // Собираем блок метаданных
+      // Собираю блок метаданных
       eventMeta.appendChild(eventCategory);
       eventMeta.appendChild(eventAttendees);
       eventMeta.appendChild(eventType);
   
-      // Собираем карточку
+      // Собираю карточку
       eventDetailsDiv.appendChild(eventDate);
       eventDetailsDiv.appendChild(eventTitle);
       eventDetailsDiv.appendChild(eventMeta);
       card.appendChild(eventImageDiv);
       card.appendChild(eventDetailsDiv);
   
-      // Добавляем карточку в контейнер
+      // Добавляю карточку в контейнер
       eventsList.appendChild(card);
     });
   }

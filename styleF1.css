@@ -424,7 +424,7 @@ body {
 }
 
 .footer-bottom {
-  position: relative; /* Меняем absolute на relative */
+  position: relative; 
   bottom: auto;
   left: auto;
   flex-direction: row;
@@ -453,10 +453,6 @@ body {
 }
 
 
-
-
-
-/* Адаптив для мобильных устройств */
 @media (max-width: 393px) {
   .header-inner {
     display: grid;
@@ -559,7 +555,7 @@ body {
     font-size: 14px;
     padding: 2px 5px;
     gap: 8px;
-    width: 10px; /* или другое значение, которое подойдет */
+    width: 10px; 
   }
   
 
@@ -573,8 +569,7 @@ body {
     /* border: 2px red solid; */
   }
   .footer-bottom{
-    /* width: 10px;
-    margin-left: 1px; */
+   
     /* border: 2px rgb(158, 190, 226) solid; */
   }
   .footer-bottom1{
@@ -593,7 +588,7 @@ body {
     display: column;
     gap: 0;
       flex-wrap: nowrap;
-      /* justify-content: space-between;  */
+     
       margin-left: 0; 
       width: 100%;
   }
@@ -638,7 +633,5 @@ body {
   .social-icons img{
     margin-right: 20px;
   }
-  
-  
 
 }

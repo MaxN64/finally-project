@@ -55,7 +55,7 @@
     display: flex;
     align-items: center;
     
-    /* gap: 0.5rem; */
+    
   }
   
   #search1 {
@@ -65,7 +65,7 @@
     width: 296px;
     height: 40px;
     background: url('/foto/VectorS.svg') no-repeat 8px center;
-  background-size: 16px 16px; /* подберите нужный размер иконки */
+  background-size: 16px 16px; 
   padding-left: 32px; 
   }
    #mountain {
@@ -74,8 +74,8 @@
     border-radius: 4px; 
     width: 296px;
     height: 40px;
-    /* background: url('/foto/VectorS.svg') no-repeat 8px center; */
-  background-size: 16px 16px; /* подберите нужный размер иконки */
+   
+  background-size: 16px 16px; 
   padding-left: 32px; 
  
   }
@@ -84,13 +84,7 @@
     opacity: 1;
 }
   
-  /* .search-bar select {
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    height: 40px;
-    width: 296px;
-  } */
+  
   .search-button {
     background-color: #ff4a4a;
     border: none;
@@ -216,7 +210,7 @@
     background-color: #ffffff;
     padding: 10px 0 10px 0 ;
     border-bottom: 1px solid #ddd;
-    margin-bottom: 1rem; /* Чтобы не сливался с сеткой */
+    margin-bottom: 1rem; 
     max-width: 1196px;
     /* border: 2px red solid; */
     margin: 0 auto;
@@ -251,11 +245,6 @@
    
   }
   
- 
-  
- 
-  
- 
   .section-title {
     margin: 1rem 0; 
     max-width: 1196px;
@@ -363,7 +352,7 @@
 
  .hero {
     display: flex;
-    flex-wrap: wrap; /* чтобы на узких экранах блоки переносились */
+    flex-wrap: wrap; 
     align-items: center;
     justify-content: space-between;
     background-color: rgba(151, 202, 209, 0.08);;
@@ -374,22 +363,7 @@
     margin-top: 140px;
     /* border: 2px red solid; */
   }
-  /* .hero-content {
-    flex: 1 1 400px; 
-    margin-right: 2rem;
-    width: 1192px;
-    height: 136px;
-  } */
   
-  /* .hero-content h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .hero-content p {
-    margin-bottom: 1.5rem;
-    max-width: 500px;
-  } */
   
   .btn-signup {
     display: inline-block;
@@ -454,7 +428,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 130px; /* фиксированная ширина для иконки и текста */
+    width: 130px; 
     padding: 1rem;
     background-color: rgba(151, 202, 209, 0.08);
     border: 1px solid #ddd;
@@ -703,9 +677,9 @@
   
 
   .site-footer {
-    background-color: #1a1a1a; /* тёмный фон */
+    background-color: #1a1a1a; 
     color: #ccc;
-    /* padding: 2rem 1rem; */
+   
     margin-top: 2rem;
     height: 559px;
     width: 1512px;
@@ -767,9 +741,8 @@
   }
   
   .footer-column {
-    /* min-width: 140px; */
+   
     width: 373px;
-    /* margin-right: 300px; */
     /* border: 6px rgb(148, 209, 247) solid; */
   }
   
@@ -857,9 +830,9 @@
   
   .footer-policies {
     display: flex;
-    /* flex-wrap: wrap; */
+   
     gap: 10px;
-    /* list-style: none; */
+    
     margin: 0px;
     padding: 0;
     /* border: 2px rgb(213, 139, 28) solid; */
@@ -893,8 +866,7 @@
       grid-row: 1;
     grid-column: 1;
     margin-right: 27px;
-    /* margin-left: 1px; */
-    /* padding-right: 10px; */
+  
     /* border: 2px rgb(213, 139, 28) solid; */
     }
   
@@ -1141,24 +1113,24 @@
 
 
   .cities-list {
-    /* Переключаемся на сетку с 2 колонками */
+    
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem; /* расстояние между карточками */
-    justify-items: center; /* выравниваем по центру в каждой колонке */
-    margin: 0 auto; /* центрируем сетку при необходимости */
+    gap: 1rem; 
+    justify-items: center; 
+    margin: 0 auto; 
   }
 
   .city-item {
-    /* Можно уменьшить отступы и размеры */
+    
     width: 100%;
-    max-width: 140px; /* чтобы картинки не растягивались слишком сильно */
+    max-width: 140px; 
     text-align: center;
     /* border: 2px red solid; */
   }
 
   .city-image {
-    /* Делаем картинки адаптивными */
+   
     width: 100%;
     height: auto;
     border-radius: 50%;
@@ -1166,14 +1138,14 @@
      }
 
   .city-item span {
-    /* Уменьшаем шрифт, если нужно */
+    
     display: block;
     margin-top: 0.5rem;
     font-size: 0.9rem;
     font-weight: 600;
   }
 
-  /* Если subtitle или заголовок нужно уменьшить */
+  
   .popular-cities h2 {
     font-size: 1.2rem;
     text-align: center;
@@ -1236,9 +1208,9 @@
 }
 .footer-links{
   display: flex;
-    flex-wrap: nowrap; /* не разрешаем перенос строк */
-    justify-content: space-between; /* равномерно распределяем колонки */
-    margin-left: 0; /* сбрасываем отступы, если они есть */
+    flex-wrap: nowrap;
+    justify-content: space-between; 
+    margin-left: 0; 
     width: 100%;
 }
 .footer-column{
@@ -1247,7 +1219,7 @@
   padding-right: 0;
   margin-right: 0;
   /* border: 2px rgb(246, 143, 143) solid; */
-  /* margin-right: 1px; */
+  
 }
 .footer-column a{
 font-size: 14px;
@@ -1282,9 +1254,4 @@ font-size: 14px;
 .social-icons img{
   margin-right: 20px;
 }
-
-
-
-
-
   }
